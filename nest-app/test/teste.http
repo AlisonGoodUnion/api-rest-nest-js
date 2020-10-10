@@ -1,0 +1,37 @@
+### Arquivo de testes.
+GET http://localhost:3000/
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/atividades
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/atividades/1
+Content-Type: application/json
+
+###
+
+PUT http://localhost:3000/atividades/1
+Content-Type: application/json
+
+{
+  "descricao": "tarefa 333",
+  "completa": true
+}
+
+###
+POST http://localhost:3000/atividades
+Content-Type: application/json
+
+{
+  "descricao": "tarefa 5",
+  "completa": false
+}
+###
+DELETE http://localhost:3000/atividades/5
+Content-Type: application/json
+
+###
