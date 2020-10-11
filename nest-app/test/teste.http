@@ -9,16 +9,16 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/atividades/1
+GET http://localhost:3000/atividades/5f83532976347714e8f5b770
 Content-Type: application/json
 
 ###
 
-PUT http://localhost:3000/atividades/1
+PUT http://localhost:3000/atividades/5f83532976347714e8f5b770
 Content-Type: application/json
 
 {
-  "descricao": "tarefa 333",
+  "descricao": "tarefa teste",
   "completa": true
 }
 
@@ -31,7 +31,8 @@ Content-Type: application/json
   "completa": false
 }
 ###
-DELETE http://localhost:3000/atividades/5
+DELETE http://localhost:3000/atividades/5f83563a5bb93114e8b0ee0a
 Content-Type: application/json
 
 ###
+

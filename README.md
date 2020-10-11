@@ -12,4 +12,15 @@ https://nestjs.com/
 ##### Neste caso, o nosso app.module.ts só recebe o module atividades assim não é necessario
 ##### importaro a service e controller no app.module
     nest g module atividades
-    
+
+#### instalação do mongoose para auxiliar na camada de persistence.
+cd .\nest-app\
+@Types ajuda nos autocompletes do mongoose...
+``` 
+npm install --save @nestjs/mongoose mongoose 
+npm install --save-dev @types/mongoose
+```
+
+###Utilizado mongo em cloud para testes de persistence.
+
+cloud.mongodb.com

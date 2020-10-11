@@ -10,15 +10,13 @@ export class AtividadesController {
     ) {
     }
 
-
     @Get()
     async getAll(): Promise<Atividade[]> {
         return this.atividadeService.getAll();
     }
 
     @Get(':id')
-    async getById(@Param('id') id: number): Promise<Atividade> {
-        console.log(id);
+    async getById(@Param('id') id: string): Promise<Atividade> {
         return this.atividadeService.getById(id);
     }
 
@@ -28,14 +26,13 @@ export class AtividadesController {
     }
 
     @Put(':id')
-    async update(@Param() id: number,
+    async update(@Param() id: string,
                  @Body() atividade: Atividade): Promise<Atividade> {
-        atividade.id = id;
-        return this.atividadeService.update(atividade);
+        return this.atividadeService.update(id, atividade);
     }
 
     @Delete(':id')
-    async delete(@Param() id: number){
+    async delete(@Param() id: string){
         this.atividadeService.delete(id);
     }
 
